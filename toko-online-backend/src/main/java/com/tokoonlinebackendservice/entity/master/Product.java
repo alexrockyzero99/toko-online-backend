@@ -44,7 +44,7 @@ public class Product extends BaseEntity {
 	@Column(name = "TOTAL_STOCK")
 	private Integer totalStock;
 	
-	@Column(name = "SELLING_PRICE")
+	@Column(name = "PRICE")
 	private Double sellingPrice;
 	
 	@Column(name = "STATUS")

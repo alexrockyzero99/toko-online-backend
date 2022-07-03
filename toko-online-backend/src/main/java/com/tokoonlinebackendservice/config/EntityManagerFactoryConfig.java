@@ -45,7 +45,7 @@ public class EntityManagerFactoryConfig {
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
         LocalContainerEntityManagerFactoryBean emf = new LocalContainerEntityManagerFactoryBean();
         emf.setDataSource(dataSource());
-        emf.setPackagesToScan("com.btpn.sharia.btpnservicemain.entity");
+        emf.setPackagesToScan("com.tokoonlinebackendservice.entity");
         emf.setJpaVendorAdapter(
             new HibernateJpaVendorAdapter());
         Properties jpaProperties = new Properties();

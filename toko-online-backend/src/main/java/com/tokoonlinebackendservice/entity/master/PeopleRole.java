@@ -6,7 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import com.tokoonlinebackendservice.entity.BaseEntity;
@@ -25,11 +25,11 @@ public class PeopleRole extends BaseEntity {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long peopleResponsibilityId;
 	
-	@OneToMany
+	@ManyToOne
 	@JoinColumn(name = "PEOPLE_ID")
 	private People people;
 	
-	@OneToMany
+	@ManyToOne
 	@JoinColumn(name = "RESPONSIBILITY_ID")
 	private Responsibility responsibility;
 	
